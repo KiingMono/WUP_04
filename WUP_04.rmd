@@ -56,6 +56,16 @@ The difference of the graduates to the classes shown in the graph that the numer
 
 <!--State hypothesis clearly.  Make sure your discussion of the inferential test covers all the aspects that the test output produces, such as test statistic, p-value etc.  Make a decision about the null hypothesis, explain the assumptions on which the selected test/procedure was based, and why the chosen procedure satisfys the assumptions and is appropriate to answer the research question!-->
 
+```{r}
+model1 <- aov(WORDSUM~DEGREE,data=Gss)
+summary.aov(model1)
+```
+```{r}
+par(mar = c(3, 16.7, 2, 2))
+plot(TukeyHSD(model1),las=2)
+```
+
+  p.value is 0.000236, as 2 is in the thousand place we gotta follow up with tukey formula and in this formula you can see all Bachelors to high school & graduates are different besides LT high school & High school Graduates because they didn't even cross the Zero Line.
 
 # Discussion and Conclusion
 
