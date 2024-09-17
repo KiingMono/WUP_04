@@ -48,6 +48,12 @@ The Graphical descriptive data, I see that 2 boxes are equal but still we dont h
 
 ## Inferential Results
 
+```{r}
+favstats(WORDSUM~DEGREE,data=Gss)
+```
+
+The difference of the graduates to the classes shown in the graph that the numerical descriptive results, it is clear that there is a statistical difference between High School & Bachelor's & Junior College. Where LT High School is lower than graduates classes.
+
 <!--State hypothesis clearly.  Make sure your discussion of the inferential test covers all the aspects that the test output produces, such as test statistic, p-value etc.  Make a decision about the null hypothesis, explain the assumptions on which the selected test/procedure was based, and why the chosen procedure satisfys the assumptions and is appropriate to answer the research question!-->
 
 
